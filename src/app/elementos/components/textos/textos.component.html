@@ -1,0 +1,11 @@
+<ng-container *ngIf="characters">
+  <mat-list>
+    <mat-list-item *ngFor="let character of characters">
+      <img [src]="character.image" alt="Character Image">
+      <div class="character-details">
+        <h3>{{ character.name }}</h3>
+        <p>{{ character.species }} - {{ character.status }}</p>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</ng-container>
